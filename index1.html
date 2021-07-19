@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>JS Practise</title>
+    <script>
+        function setfullName(){
+        var FirstName= documet.getElementByid("FirstName");
+        var MiddleName= document.getElementByid("MiddleName");
+        var LastName= document.getElementByid("LastName");
+        var FullName= document.getElementByid("Full Name");
+        FullName.value=FirstName.value +" " + MiddleName.value +" "+ LastName.value;
+    }
+    </script>
+</head> 
+<body>
+    <label>First Name</label>
+     <input type="text" id="FirstName">
+     <br>
+     <br>
+     <label>Middle Name</label>
+     <input type="text" id="MiddleName">
+     <br>
+     <br>
+     <label>Last Name</label>
+     <input type="text" id="LastName">
+     
+     <br>
+     <br>
+     <label>Full Name</label>
+     <input type="text" id="FullName">
+     <br>
+     <br>
+     <button onclick="setfullName()">Full Name </button>
+     <button onclick=" clearFName()">reset</button>
+</body>
+</html>

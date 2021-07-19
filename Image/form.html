@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>registration</title>
+    <script>
+      function setStoreValue(){
+          sessionStorage.setItem("userName",document.getElementByid("name").value);
+      }   
+      function getStoreValue(){
+          documet.getElementByid("name").value= sessionStorage.getItem("username");
+          documet.getElementByid("word").value= sessionStorage.getItem("userword");
+          documet.getElementByid("cnfword").value= sessionStorage.getItem("userword");
+       
+      }
+    </script>
+</head>
+<style>
+    legend{
+        background-color: chocolate;
+        padding: 5px;
+    }
+</style>
+<body>
+    <fieldset>
+        <legend>REGISTRATION</legend>    <h1><I><b></b></I></h1>
+    <br>
+    <label>Name</label>
+    <br>
+    <input id="name" type="text">
+    <br>
+    <label>word</label>
+    <br>
+    <input id="word" type="word">
+    <br>
+    <label>Confirm word</label>
+    <br>
+    <input type="word">
+    <br>
+    <br>
+    <label><b>Gender</b></label>
+    <input type="radio"name="gender"value= "male">
+    <input type="radio"name="gender"value= "female">
+    <br>
+    <label><i>ies</i></label>-
+    <input type="checkbox">Coding
+    <input type="checkbox">Gaming
+    <input type="checkbox">Foodie
+    <br><br>
+    <label>DOB</label>
+    <input type="number">    
+    <br>
+    <br>
+    <button onclick="setStorevalue">SUBMIT</button>
+</fieldset>
+
+</body>
+
+</html>

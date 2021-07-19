@@ -1,77 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title> form</title>
-  </head>
-  <body>
-    <h1>Employee Details</h1>
-    <hr>
-    <h3>Personal info</h3>
-    <br>
-    <label>First Name</label>
-    <input type="text">
-    <br>
-    <label >Last Name</label>
-    <input type="text">
-    <button type="button">Full Name</button>
-    <br>
-    <br>
-    <label >Full Name</label>
-    <input type="text">
-    <hr>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../PDACJAVASCRIPT/index.js">
+
+  <script>
+    function setfullName(){
+      var fName= document.getElementByID("firstname");
+      var lname= document.getElementByID("lastname");
+      var fullName= document.getElementByID("fullname");
+      fullName.value=fName.value +" "+lName.value;
+    }
     
-    <br>
-    <!--  TABLE  -->
+</script>
+  <title> form</title>
+</head>
 
-    <table border="2px">
-      <tr>
-        <th>Sr.No</th>
-        <th>Name</th>
-        <th>Desigation</th>
-        <th>Salary</th>
-      </tr>
-  
-      <tr>
-        <td>1</td>
-        <td>zaid</td>
-        <td>Frontend</td>
-        <td>90000</td>
-      </tr>
+<body>
+  <h1>Employee Details</h1>
+  <hr>
+  <h3>Personal info</h3>
+  <br>
+  <label>First Name</label>
+  <input type="text" id="firstname">
+  <br>
+  <label>Last Name</label>
+  <input type="text" id="lastname
+  <button "onclick="setfullName()">Full Name</button>
+  <br>
+  <br>
+  <label>Full Name:</label>
+  <input  type="text" id="fullname">
+  <hr>
 
-      <tr>
-        <td>2</td>
-        <td>Aashir</td>
-        <td>Backend</td>
-        <td>120000</td>
-      </tr>
-      <tr>
+  <br>
+  <!--  TABLE  -->
+
+  <table border="3px">
+    <tr>
+      <th>Sr.No</th>
+      <th>Name</th>
+      <th>Desigation</th>
+      <th>Salary</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>zaid</td>
+      <td>Frontend</td>
+      <td>90000</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Aashir</td>
+      <td>Backend</td>
+      <td>120000</td>
+    </tr>
+    <tr>
       <td>3</td>
       <td>Pathan</td>
       <td>Worker</td>
       <td>300000</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Faizan</td>
-        <td>Tiktoker</td>
-        <td>200</td>
-      </tr>
-      </table> 
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Faizan</td>
+      <td>Tiktoker</td>
+      <td>200</td>
+    </tr>
+  </table>
 
-      <!----------session 2---------->
-      <ol>
-        <li>Communication Technology.</li>
-         <li> Construction Technology.</li>
-         <li> Product Technology.</li>
-          <li>Architecture Technology.</li>
-          <li>Business Technology.</li>
-          <li>Educational Technology. </li>
-          <li>Information Technology</li></ol>
+  <!----------session 2---------->
+  <ol>
+    <li>Communication Technology.</li>
+    <li> Construction Technology.</li>
+    <li> Product Technology.</li>
+    <li>Architecture Technology.</li>
+    <li>Business Technology.</li>
+    <li>Educational Technology. </li>
+    <li>Information Technology</li>
+    <li>cyber security</li>
+    <li> artifical intelligence </li>
+    <li> bio technology </li>
+  </ol>
+  <br>
+  <ul>
+    <li>samsung</li>
+    <li>sony</li>
+    <li>oneplus</li>
+    <li>apple</li>
+    <li>vivo</li>
+    <li>oppo</li>
+    <li>mi</li>
+    <li>redmi</li>
+    <li>xiomi</li>
+    <li>nokia</li>
 
-      </ol>
+  </ul>
 
+  </ol>
+  <!-------------------span tag------------------->
+  <h1>* SPAN TAG</h1>
+  <h1><span style="color: blue;">B</span> <span style="color: red;">M</span> <span style="color: seagreen;">W</span>
+  </h1>
+  <br>
+   <!----------------js----------------->
+     <label>First Name </label>
+     <input type="text" id="First Name">
+     <br>
+     <br>
+     <label>Middle Name</label>
+     <input type="text" id="Middle Name">
+     <br>
+     <br>
+     <label>Last Name</label>
+     <input type="text" id="Last Name">
+     <button>Full Name</button>
+     <br>
+     <br>
+     <label>Full Name</label>
+     <input type="text" id="Full Name">
+</body>
 
-
-      </body>
 </html>

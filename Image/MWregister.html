@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>registration</title>
+    <script>
+      function setStoreValue(){
+          sessionStorage.setItem("userName",document.getElementByid("name").value);
+      }   
+      function getStoreValue(){
+          documet.getElementByid("name").value= sessionStorage.getItem("username");
+          documet.getElementByid("").value= sessionStorage.getItem("user");
+          documet.getElementByid("cnf").value= sessionStorage.getItem("user");
+       
+      }
+    </script>
+</head>
+<style>
+    legend{
+        
+        padding: 5px;
+        text-align: center;
+        
+    }
+    form{
+        background-color: slategrey;
+        width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-left: 450px;
+        margin-top:100px;
+    }
+    body{
+    background-image: url(./bown.jpg.jpeg);
+    }
+    a {
+        padding: 35px;
+        color: yellow;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    nav {
+        padding: 26px;
+        background-color:rgb(red, green, blue)
+    }
+
+    a:hover {
+        background-color: lavenderblush;
+        color: black;
+        padding: 15px;
+        border-radius: 50px;
+    }
+
+</style>
+<body> 
+    <nav>
+        
+     <a href="http://127.0.0.1:5500/myWebsite.html">HOME</a>
+        <a href="http://127.0.0.1:5500/Image/MWregister.html">REGISTER</a>
+        <a href="http://127.0.0.1:5500/MWpackages.html">PACKAGES</a>
+        <a href="http://127.0.0.1:5500/MWaboutus.html">ABOUT US</a>
+        <input type="text" placeholder="Search Here...">
+    </nav><form>
+    <fieldset>
+        <legend>REGISTRATION FORM</legend>    <h1><I><b></b></I></h1>
+    <br>
+  
+    <label><b>Name</b></label>
+    <br>
+    <input id="name" placeholder="write your name" type="text">
+    <br>
+    <label> <b>Password</b></label>
+    <br>
+    <input type="password" placeholder="write your password">
+    <br>
+    <label><b>Confirm</b> </label>
+    <br>
+    <input type="password" placeholder="confirm password">
+    <br>
+    <br>
+    <label><b>Gender</b></label>
+    <input type="radio"name="gender"value= "male">Male
+    <input type="radio"name="gender"value= "female">Female
+    <br>
+    <label><b>Hobbies</b></label>-
+    <input type="checkbox">Coding
+    <input type="checkbox">Gaming
+    <input type="checkbox">Foodie
+    <br><br>
+    <label><b>DOB</b></label>
+    <input type="number" placeholder="date of birth">    
+    <br>
+    <br>
+    <button onclick="setStorevalue">SUBMIT</button>
+</fieldset>
+</form>
+
+</body>
+
+</html>
